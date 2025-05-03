@@ -35,12 +35,15 @@ void main()
 	printf("%d\n", strcmp(str5, str6)); // Returns 0 (the strings are equal)
 	// Compare str5 and str7, and print the result
 	printf("%d\n", strcmp(str5, str7)); // Returns -1 (the strings are not equal)
+	printf("%d\n", strcmp(str7, str5)); // Returns 1 (the strings are not equal)
+
 
 	char myStr[] = "Hello World";
 	char *myPtr = strchr(myStr, 'W');
-	if (myPtr != NULL) {
-	 	printf("%s\n", myPtr);
-	}
+	printf(strchr(myStr,'W'));
+	// if (myPtr != NULL) {
+	//  	printf("%s\n", myPtr);
+	// }
 
 	char myStr1[] = "The rain in Spain falls mainly on the plains";
 	char *myPtr1 = strstr(myStr1, "ain");
